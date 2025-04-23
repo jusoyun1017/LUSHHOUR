@@ -33,7 +33,9 @@ body, html {
   font-size: 6vw;
   color: white;
   margin-bottom: 20px;
+  animation: splash 1.5s ease-in-out infinite;
 }
+
 @keyframes splash {
   0%, 100% {
     transform: scale(1);
