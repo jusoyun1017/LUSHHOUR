@@ -28,32 +28,39 @@ body, html {
   text-align: center;
 }
 
-.title {
+.cocktail-title {
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   font-size: 6vw;
   color: white;
-  margin-bottom: 20px;
-}
-
-.ink {
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-  font-size: 6vw;
-  color: white;
-  filter: url(#ink-effect);
-  animation: revealInk 2s ease-out forwards;
   opacity: 0;
+  filter: blur(5px) hue-rotate(60deg);
+  animation: mixCocktail 2.5s ease-out forwards;
 }
 
-@keyframes revealInk {
+@keyframes mixCocktail {
   0% {
     opacity: 0;
-    filter: url(#ink-effect);
+    filter: blur(8px) hue-rotate(120deg);
+    transform: rotate(0deg) scale(1);
+  }
+  30% {
+    opacity: 0.6;
+    filter: blur(4px) hue-rotate(200deg);
+    transform: rotate(1deg) scale(1.05);
+  }
+  60% {
+    opacity: 0.9;
+    filter: blur(2px) hue-rotate(60deg);
+    transform: rotate(-1deg) scale(0.98);
   }
   100% {
     opacity: 1;
-    filter: none;
+    filter: blur(0px) hue-rotate(0deg);
+    transform: rotate(0deg) scale(1);
   }
 }
+
+
 
 .subtitle {
   font-size: 1.2vw;
