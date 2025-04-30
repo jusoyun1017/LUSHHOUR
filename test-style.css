@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0f0c;
+  font-family: 'Pretendard', sans-serif;
+  color: white;
+}
+
+.question-wrapper {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.progress-dots {
+  font-size: 10px;
+  color: #888;
+  letter-spacing: 6px;
+  margin-bottom: 80px;
+}
+
+.question-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.question-title::before,
+.question-title::after {
+  content: "";
+  display: inline-block;
+  width: 560px;
+  height: 1px;
+  background-color: #6e5843;
+  position: absolute;
+  top: 50%;
+}
+
+.question-title::before {
+  right: 100%;
+  margin-right: 12px;
+}
+
+.question-title::after {
+  left: 100%;
+  margin-left: 12px;
+}
+
+.question-subtitle {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 74px;
+}
+
+.option-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+.option-button {
+  width: 90%;
+  max-width: 544px;
+  height: 48px;
+  background-color: #6e5843;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.option-button:hover {
+  background-color: #5a4633;
+}
+
+.option-button .number {
+  position: absolute;
+  left: 20px;
+  font-weight: 900;
+}
+
+.option-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #b8b0a3 50%, #6e5843 50%);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+/* 모바일 대응 */
+@media screen and (max-width: 480px) {
+  .question-wrapper {
+    padding: 40px 16px;
+  }
+
+  .question-title {
+    font-size: 1.2rem;
+  }
+
+  .question-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .option-button {
+    height: 44px;
+    font-size: 0.9rem;
+    padding-left: 44px;
+  }
+
+  .option-button .number {
+    left: 16px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,134 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.hero {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+overflow: hidden;
+}
+
+/* 파동 배경 */
+.ripple-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: rippleExpand 2.5s ease-out forwards;
+  z-index: 0;
+}
+
+
+.title {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-size: 6vw;
+  color: white;
+  margin-bottom: 20px;
+position: relative;
+  z-index: 1;
+  opacity: 0;
+  filter: blur(8px);
+  transform: scale(0.95);
+  animation: rippleTextIn 2.5s ease-out forwards;
+}
+
+/* 서브타이틀 */
+.subtitle {
+  font-size: 1.2vw;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  animation: rippleTextIn 1.5s ease-out forwards;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+
+/* 버튼 */
+.button {
+  background-color: #a8744f;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-size: 1vw;
+ position: relative;
+  z-index: 1;
+  opacity: 0;
+  animation: buttonFadeIn 1.5s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+.button:hover {
+  background-color: #91613f;
+}
+
+/* 애니메이션 */
+@keyframes rippleExpand {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.6;
+  }
+  100% {
+    width: 2000px;
+    height: 2000px;
+    opacity: 0;
+  }
+}
+
+@keyframes rippleTextIn {
+  0% {
+    opacity: 0;
+    filter: blur(8px);
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
+  }
+}
+
+@keyframes buttonFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
