@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>테스트 질문</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/test-style.css" />
+
+<!-- head 태그 안에 이걸 추가 -->
+<script src="js/test-script.js" defer></script>
+
+
+  <style>
+    body {
+      width: 1920px;
+      margin: 0 auto;
+      overflow-x: hidden;
+    }
+
+    .question-wrapper {
+      text-align: center;
+    }
+
+    .img-option-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      margin-top: 60px;
+    }
+
+    .img-option {
+      width: 712px;
+      height: 55px;
+      cursor: pointer;
+      transition: filter 0.2s ease;
+      border: 3px solid transparent;
+    }
+
+    .img-option:hover {
+      filter: brightness(0.85);
+    }
+
+    .img-option.selected {
+      border-color: #91613f;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 60px;
+    }
+
+    .nav-button {
+      width: 160px;
+      height: 48px;
+      border-radius: 999px;
+      border: 1px solid #fff;
+      background-color: transparent;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #91613f;
+    }
+  </style>
+
+
+</head>
+<body>
+  <div class="question-wrapper">
+    <div class="progress-dots">○ ○ ○ ○ ○ ●</div>
+    <div class="question-title">오늘 어느 정도로 즐기고 싶으신가요?</div>
+    <div class="question-subtitle">최대 1가지를 선택해 주세요.</div>
+    <div class="img-option-list">
+  <div class="img-option"><span class="label">01 오늘 한 번 취해보자!!</span></div>
+  <div class="img-option"><span class="label">02 적당하게 즐길 정도</span></div>
+  <div class="img-option"><span class="label">03 마시기 쉽고 가볍게</span></div>
+  </div>
+<div id="submit-container"></div>
+
+
+<!-- ✅ 이전/다음 버튼 유지 -->
+<!-- 다음으로 버튼에는 onclick="..." 절대 넣지 마세요 -->
+<div class="nav-buttons">
+  <button class="nav-button" onclick="window.location.href='test5.html'">이전으로</button>
+  <button class="nav-button">다음으로</button>
+</div>
+
+</body>
+</html>

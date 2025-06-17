@@ -1,0 +1,194 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Pretendard', sans-serif;
+  width: 100%; /* ✅ 고정 해제 */
+  max-width: 100vw; /* ✅ 뷰포트 제한 */
+  overflow-x: hidden;
+}
+
+/* 배경 히어로 영역 */
+.hero {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* ✅ 반응형 높이 */
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* ✅ 반응형 */
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ripple-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: rippleExpand 2.5s ease-out forwards;
+  z-index: 0;
+}
+
+.title {
+  font-family: "Libre Baskerville", serif;
+  font-size: 115px;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  filter: blur(8px);
+  transform: scale(0.95);
+  animation: rippleTextIn 2.5s ease-out forwards;
+  animation-fill-mode: forwards;
+}
+
+.subtitle {
+  font-size: 23px;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  animation: rippleTextIn 1.5s ease-out forwards;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.button {
+  background-color: #a8744f;
+  color: white;
+  text-decoration: none;
+  padding: 18px 36px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  animation: buttonFadeIn 1.5s ease-out forwards;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  width: 200px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #91613f;
+}
+
+.img-option.selected {
+  border: 3px solid #91613f;
+  background-color: rgba(145, 97, 63, 0.1);
+}
+
+.nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@keyframes rippleExpand {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.6;
+  }
+  100% {
+    width: 2000px;
+    height: 2000px;
+    opacity: 0;
+  }
+}
+
+@keyframes rippleTextIn {
+  0% {
+    opacity: 0;
+    filter: blur(8px);
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
+  }
+}
+
+@keyframes buttonFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* [추가] 반응형 처리 */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 80px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 14px 28px;
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .overlay {
+    padding: 40px 20px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 24px;
+    margin: 10px 0;
+  }
+
+  .overlay > div[style*="display: flex"] {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}

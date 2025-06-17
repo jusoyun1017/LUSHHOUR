@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>테스트 질문</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/test-style.css" />
+
+<!-- head 태그 안에 이걸 추가 -->
+<script src="js/test-script.js" defer></script>
+
+
+  <style>
+    body {
+      width: 1920px;
+      margin: 0 auto;
+      overflow-x: hidden;
+    }
+
+    .question-wrapper {
+      text-align: center;
+    }
+
+    .img-option-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      margin-top: 60px;
+    }
+
+    .img-option {
+      width: 712px;
+      height: 55px;
+      cursor: pointer;
+      transition: filter 0.2s ease;
+      border: 3px solid transparent;
+    }
+
+    .img-option:hover {
+      filter: brightness(0.85);
+    }
+
+    .img-option.selected {
+      border-color: #91613f;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 60px;
+    }
+
+    .nav-button {
+      width: 160px;
+      height: 48px;
+      border-radius: 999px;
+      border: 1px solid #fff;
+      background-color: transparent;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #91613f;
+    }
+  </style>
+</head>
+<body>
+  <div class="question-wrapper">
+    <div class="progress-dots">○ ○ ○ ● ○ ○</div>
+    <div class="question-title">어떤 맛을 가장 좋아하나요?</div>
+    <div class="question-subtitle">최대 2가지를 선택해 주세요.</div>
+
+    <!-- ✅ 이미지 버튼 리스트로 대체 -->
+<div class="img-option-list">
+  <div class="img-option"><span class="label">01 상큼하고 시원한 맛</span></div>
+  <div class="img-option"><span class="label">02 달콤하고 부드러운 맛</span></div>
+  <div class="img-option"><span class="label">03 쌉쌀하고 깊은 맛</span></div>
+  <div class="img-option"><span class="label">04 새콤달콤한 과일 맛</span></div>
+  <div class="img-option"><span class="label">05 살짝 매콤함이 있는 독특한 맛</span></div>
+ <div class="img-option"><span class="label">06 크리미하고 부드러운 맛</span></div>
+ <div class="img-option"><span class="label">07 와인처럼 깊고 풍부한 맛</span></div>
+</div>
+
+<!-- ✅ 이전/다음 버튼 유지 -->
+<!-- 다음으로 버튼에는 onclick="..." 절대 넣지 마세요 -->
+<div class="nav-buttons">
+  <button class="nav-button" onclick="window.location.href='test3.html'">이전으로</button>
+  <button class="nav-button">다음으로</button>
+</div>
+
+    </div>
+  </div>
+</body>
+</html>
