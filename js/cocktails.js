@@ -2,7 +2,7 @@ const cocktails = [
   {
     name_en: "Appletini",
     name_ko: "애플 마르티니",
-    img: "cocktail_list/images/애플마티니.jpg",
+    img: "../cocktail_list/images/애플마티니.jpg",
     hashtags: [
       "#초보자", "#힙합", "#새콤한", "#약한 탄산", "#적당한 도수"
     ],
@@ -13,12 +13,12 @@ const cocktails = [
       4. 혼합물을 스트레이너를 사용해 칵테일 잔에 따릅니다.<br>
       <b>TIP!</b> 사과 조각으로 맛있는 장식을 취하는 건 어떨까요?
     `,
-    link: "recipe/appletini.html"
+    link: "../recipe/appletini.html"
   },
   {
     name_en: "B&B",
     name_ko: "비앤비",
-    img: "cocktail_list/images/비앤비.jpg",
+    img: "../cocktail_list/images/비앤비.jpg",
     hashtags: [
       "#유럽 바", "#오페라", "#달콤하고 부드러운", "#탄산 없음", "#적당한 도수"
     ],
@@ -29,12 +29,12 @@ const cocktails = [
       4. 막대기로 잘 저어줍니다.<br>
       5. 마지막으로 장식용 레몬 조각을 올려주면 완성!
     `,
-    link: "recipe/b&b.html"
+    link: "../recipe/b&b.html"
   },
   {
     name_en: "Bloody Mary",
     name_ko: "블러디 메리",
-    img: "cocktail_list/images/블러디메리.jpg",
+    img: "../cocktail_list/images/블러디메리.jpg",
     hashtags: [
       "#사막 리조트", "#힙합", "#매운", "#약한 탄산", "#적당한 도수"
     ],
@@ -46,12 +46,12 @@ const cocktails = [
       5. 소금과 후추를 약간 넣고, 막대기로 잘 저어줍니다.<br>
       <b>TIP!</b> 셀러리 스틱과 레몬 조각으로 가니쉬를 하면 더욱 좋아요!
     `,
-    link: "recipe/bloody_mary.html"
+    link: "../recipe/bloody_mary.html"
   },
   {
     name_en: "Caipirinha",
     name_ko: "카이피리냐",
-    img: "cocktail_list/images/카이피리냐.jpg",
+    img: "../cocktail_list/images/카이피리냐.jpg",
     hashtags: [
       "#바닷가에서", "#힙합", "#새콤한", "#강한 탄산", "#높은 도수"
     ],
@@ -62,12 +62,12 @@ const cocktails = [
       4. 잘 저어준 후, 얼음을 추가로 넣어줍니다.<br>
       <b>TIP!</b> 라임 조각으로 맛있는 장식을 취하는 건 어떨까요?
     `,
-    link: "recipe/caipirinha.html"
+    link: "../recipe/caipirinha.html"
   },
   {
     name_en: "Campari Soda",
     name_ko: "캄파리 소다",
-    img: "cocktail_list/images/캄파리소다.jpg",
+    img: "../cocktail_list/images/캄파리소다.jpg",
     hashtags: [
       "#초보자", "#클래식", "#풍부한", "#탄산 없음", "#적당한 도수"
     ],
@@ -78,12 +78,12 @@ const cocktails = [
       4. 잘 저어준 후, 얼음을 추가로 넣어줍니다.<br>
       <b>TIP!</b> 레몬 조각으로 맛있는 장식을 취하는 건 어떨까요?
     `,
-    link: "recipe/campari_soda.html"
+    link: "../recipe/campari_soda.html"
   },
   {
     name_en: "Cosmopolitan",
     name_ko: "코스모폴리탄",
-    img: "cocktail_list/images/코스모폴리탄.jpg",
+    img: "../cocktail_list/images/코스모폴리탄.jpg",
     hashtags: [
       "#루프탑 바", "#힙합", "#새콤한", "#약간의 탄산", "#적당한 도수"
     ],
@@ -94,12 +94,12 @@ const cocktails = [
       4. 혼합물을 스트레이너를 사용해 칵테일 잔에 따릅니다.<br>
       <b>TIP!</b> 레몬 조각이나 라임으로 장식해보는 건 어떨까요?
     `,
-    link: "recipe/cosmopolitan.html"
+    link: "../recipe/cosmopolitan.html"
   },
   {
     name_en: "Daiquiri",
     name_ko: "다이키리",
-    img: "cocktail_list/images/다이키리.jpg",
+    img: "../cocktail_list/images/다이키리.jpg",
     hashtags: [
       "#바닷가에서", "#라틴 음악이 들리는", "#상큼한", "#약간의 탄산", "#높은 도수"
     ],
@@ -108,12 +108,12 @@ const cocktails = [
       2. 얼음을 넣고 8~10초 가량 흔들어줍니다.<br>
       3. 얼음을 체로 걸러내 차갑게 식힌 마티니 글라스에 따라줍니다.
     `,
-    link: "recipe/daiquiri.html"
+    link: "../recipe/daiquiri.html"
   },
   {
     name_en: "French 75",
     name_ko: "프렌치 75",
-    img: "cocktail_list/images/프렌치75.jpg",
+    img: "../cocktail_list/images/프렌치75.jpg",
     hashtags: [
       "#크루즈", "#클래식", "#새콤한", "#약간의 탄산", "#적당한 도수"
     ],
@@ -124,12 +124,12 @@ const cocktails = [
       4. 혼합물을 스트레이너를 사용해 칵테일 잔에 따릅니다.<br>
       5. 마지막으로 샴페인 60ml를 조심스럽게 부어줍니다.
     `,
-    link: "recipe/french75.html"
+    link: "../recipe/french75.html"
   },
   {
     name_en: "Irish Coffee",
     name_ko: "아이리시 커피",
-    img: "cocktail_list/images/아이리쉬커피.jpg",
+    img: "../cocktail_list/images/아이리쉬커피.jpg",
     hashtags: [
       "#따뜻하고 포근한", "#오페라", "#달콤하고 부드러운", "#탄산 없음", "#적당한 도수"
     ],
@@ -139,12 +139,12 @@ const cocktails = [
       3. 설탕 1큰술을 넣고 잘 저어줍니다.<br>
       4. 마지막으로 휘핑 크림을 위에 올려주면 완성!
     `,
-    link: "recipe/irish_coffee.html"
+    link: "../recipe/irish_coffee.html"
   },
   {
     name_en: "Long Island Iced Tea",
     name_ko: "롱 아일랜드 아이스티",
-    img: "cocktail_list/images/롱아일랜드아이스티.jpg",
+    img: "../cocktail_list/images/롱아일랜드아이스티.jpg",
     hashtags: [
       "#신나는 파티", "#화려한 음악", "#달콤하고 부드러운 맛", "#역전의 탄산", "#섬세한 도수"
     ],
@@ -155,12 +155,12 @@ const cocktails = [
       4. 그 위에 콜라를 부워주면 완성!<br>
       <b>TIP!</b> 레몬 조각으로 맛있는 장식을 취하는 건 어떨까요?
     `,
-    link: "recipe/Long_Island_Iced_Tea.html"
+    link: "../recipe/Long_Island_Iced_Tea.html"
   },
   {
     name_en: "Manhattan",
     name_ko: "맨해튼",
-    img: "cocktail_list/images/맨해튼.jpg",
+    img: "../cocktail_list/images/맨해튼.jpg",
     hashtags: [
       "#조용한 밤", "#클래식", "#달콤하고 부드러운", "#탄산 없음", "#적당한 도수"
     ],
@@ -171,12 +171,12 @@ const cocktails = [
       4. 칵테일 글라스에 체리와 함께 따라줍니다.<br>
       5. 마지막으로 칵테일 체리를 올려 장식하면 완성!
     `,
-    link: "recipe/manhattan.html"
+    link: "../recipe/manhattan.html"
   },
   {
     name_en: "Margarita",
     name_ko: "마르가리타",
-    img: "cocktail_list/images/마르가리타.jpg",
+    img: "../cocktail_list/images/마르가리타.jpg",
     hashtags: [
       "#신나는 파티", "#힙합", "#새콤한", "#강한 탄산", "#높은 도수"
     ],
@@ -185,12 +185,12 @@ const cocktails = [
       2. 셰이커에 라임 주스, 트리플 섹, 데킬라와 얼음을 모두 넣고 잘 흔들어줍니다.<br>
       3. 얼음을 걸러내 차갑게 식힌 칵테일 글라스에 따라줍니다.
     `,
-    link: "recipe/margarita.html"
+    link: "../recipe/margarita.html"
   },
   {
     name_en: "Martini",
     name_ko: "마르티니",
-    img: "cocktail_list/images/마르티니.jpg",
+    img: "../cocktail_list/images/마르티니.jpg",
     hashtags: [
       "#루프탑 바", "#연회장", "#와인 풍미", "#묵직함", "#높은 도수"
     ],
@@ -200,12 +200,12 @@ const cocktails = [
       3. 차갑게 식힌 마티니 글라스에 얼음을 걸러내고 따라줍니다.<br>
       <b>TIP!</b> 레몬 필(껍질)로 오일을 뿌리거나, 칵테일 픽을 사용해 올리브로 장식해보는 건 어떨까요?
     `,
-    link: "recipe/martini.html"
+    link: "../recipe/martini.html"
   },
   {
     name_en: "Mezcal Negroni",
     name_ko: "메즈칼 네그로니",
-    img: "cocktail_list/images/메즈칼네그로니.jpg",
+    img: "../cocktail_list/images/메즈칼네그로니.jpg",
     hashtags: [
       "#독특한 취향", "#힙합", "#매운", "#탄산 없음", "#높은 도수"
     ],
@@ -216,12 +216,12 @@ const cocktails = [
       4. 칵테일 글라스에 얼음을 채우고 섞은 재료를 따라줍니다.<br>
       5. 마지막으로 오렌지 껍질을 장식으로 올려주면 완성!
     `,
-    link: "recipe/mezcal_negroni.html"
+    link: "../recipe/mezcal_negroni.html"
   },
   {
     name_en: "Mimosa",
     name_ko: "미모사",
-    img: "cocktail_list/images/미모사.jpg",
+    img: "../cocktail_list/images/미모사.jpg",
     hashtags: [
       "#초보자", "#인디 음악", "#상큼한", "#탄산 없음", "#가벼운 도수"
     ],
@@ -231,12 +231,12 @@ const cocktails = [
       3. 바 스푼으로 잘 저어주고 각얼음을 넣어 시원하게 즐깁니다.<br>
       <b>TIP!</b> 원한다면 오렌지 필 트위스트로 가니쉬를 해보세요!
     `,
-    link: "recipe/Mimosa.html"
+    link: "../recipe/mimosa.html"
   },
   {
     name_en: "Mojito",
     name_ko: "모히또",
-    img: "cocktail_list/images/모히또.jpg",
+    img: "../cocktail_list/images/모히또.jpg",
     hashtags: [
       "#신나는 파티", "#록", "#상큼한", "#강한 탄산", "#높은 도수↑"
     ],
@@ -247,12 +247,12 @@ const cocktails = [
       4. 탄산수를 부어주고, 잘 섞어줍니다.<br>
       5. 마지막으로 장식용 라임 조각과 설탕을 올려주면 완성!
     `,
-    link: "recipe/mojito.html"
+    link: "../recipe/mojito.html"
   },
   {
     name_en: "Negroni",
     name_ko: "네그로니",
-    img: "cocktail_list/images/네그로니.jpg",
+    img: "../cocktail_list/images/네그로니.jpg",
     hashtags: [
       "#따뜻하고 포근한", "#발라드", "#쌉쌀하고 깊은", "#탄산 없음", "#높은 도수"
     ],
@@ -261,12 +261,12 @@ const cocktails = [
       2. 얼음 위에 비터 캄파리, 진, 스위트 레드 베르무트를 모두 부어주고 잘 저어줍니다.<br>
       3. 오렌지 슬라이스 반 조각을 넣어 가니시 해줍니다.
     `,
-    link: "recipe/negroni.html"
+    link: "../recipe/negroni.html"
   },
   {
     name_en: "Old Fashioned",
     name_ko: "올드 패션드",
-    img: "cocktail_list/images/올드패션드.jpg",
+    img: "../cocktail_list/images/올드패션드.jpg",
     hashtags: [
       "#조용한 밤", "#발라드", "#쌉쌀하고 깊은", "#탄산 없음", "#높은 도수"
     ],
@@ -276,12 +276,12 @@ const cocktails = [
       3. 잘 저어준 후, 오렌지 껍질을 짜서 향을 더합니다.<br>
       4. 마지막으로 장식용 체리를 올려주면 완성!
     `,
-    link: "recipe/old_fashioned.html"
+    link: "../recipe/old_fashioned.html"
   },
   {
     name_en: "Piña Colada",
     name_ko: "피나 콜라다",
-    img: "cocktail_list/images/피나콜라다.jpg",
+    img: "../cocktail_list/images/피나콜라다.jpg",
     hashtags: [
       "#따뜻하고 포근한", "#클래식", "#크리미하고 부드러운", "#탄산 없음", "#가벼운 도수"
     ],
@@ -291,12 +291,12 @@ const cocktails = [
       3. 믹서를 작동시켜 재료가 잘 섞이도록 합니다.<br>
       4. 혼합물을 칵테일 잔에 붓고, 원한다면 파인애플 조각이나 체리로 장식합니다.
     `,
-    link: "recipe/pina_colada.html"
+    link: "../recipe/pina_colada.html"
   },
   {
     name_en: "Sangria",
     name_ko: "산그리아",
-    img: "cocktail_list/images/산그리아.jpg",
+    img: "../cocktail_list/images/산그리아.jpg",
     hashtags: [
       "#와이너리", "#인디 음악", "#풍부한", "#탄산 없음", "#높은 도수"
     ],
@@ -307,12 +307,12 @@ const cocktails = [
       4. 설탕 1큰술을 넣고 잘 저어줍니다.<br>
       5. 오렌지 슬라이스, 레몬 슬라이스, 사과 조각을 넣어 장식합니다.
     `,
-    link: "recipe/sangria.html"
+    link: "../recipe/sangria.html"
   },
   {
     name_en: "Sazerac",
     name_ko: "사제락",
-    img: "cocktail_list/images/사제락.jpg",
+    img: "../cocktail_list/images/사제락.jpg",
     hashtags: [
       "#산 속 오두막", "#발라드", "#풍부한", "#탄산 없음", "#높은 도수"
     ],
@@ -323,12 +323,12 @@ const cocktails = [
       4. 잘 저어준 후, 아브세인트로 코팅한 잔에 따라 붓습니다.<br>
       5. 마지막으로 레몬 껍질을 짜서 향을 더하고, 장식으로 올려주면 완성!
     `,
-    link: "recipe/sazerac.html"
+    link: "../recipe/sazerac.html"
   },
   {
     name_en: "Whiskey Sour",
     name_ko: "위스키 사워",
-    img: "cocktail_list/images/위스키샤워.jpg",
+    img: "../cocktail_list/images/위스키샤워.jpg",
     hashtags: [
       "#조용한 밤", "#인디 음악", "#새콤달콤한 과일", "#강한 탄산", "#높은 도수"
     ],
@@ -339,6 +339,6 @@ const cocktails = [
       4. 잘 저어준 후, 얼음을 추가로 넣어줍니다.<br>
       <b>TIP!</b> 레몬 조각으로 맛있는 장식을 취하는 건 어떨까요?
     `,
-    link: "recipe/whiskey_sour.html"
+    link: "../recipe/whiskey_sour.html"
   }
 ];

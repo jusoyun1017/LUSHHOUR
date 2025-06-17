@@ -1,13 +1,13 @@
 // 1. 답변 불러오기
 const answers = JSON.parse(localStorage.getItem('lushhour_answers') || '[]');
+const keywordCount = {};
 
 // 2. 키워드 집계
-const keywordCount = {};
 answers.flat().forEach(ans => {
   cocktails.forEach(cocktail => {
     cocktail.hashtags.forEach(tag => {
-      // 선택지와 해시태그가 일부라도 일치하면 카운트
-      if (ans.replace('#', '').includes(tag.replace('#', ''))) {
+      // 해시태그 키워드(짧은 단어)가 선택지 텍스트(긴 문장)에 포함되어 있으면 카운트
+      if (ans.replace(/\s/g, '').includes(tag.replace('#', '').replace(/\s/g, ''))) {
         keywordCount[tag] = (keywordCount[tag] || 0) + 1;
       }
     });
@@ -39,4 +39,5 @@ top3.forEach((cocktail, idx) => {
     .map(tag => `<span class="hashtag">${tag}</span>`).join('');
   cardEls[idx].querySelector('.recipe').innerHTML = cocktail.recipe;
   cardEls[idx].querySelector('.btn').href = cocktail.link;
+  // target 속성은 추가하지 않음
 });

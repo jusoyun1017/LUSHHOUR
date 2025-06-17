@@ -137,7 +137,8 @@ body {
 }
 
 .img-option.selected {
-  border-color: #91613f;
+  border: 2px solid #a08772;
+  background: #463524;
 }
 
 .img-option .label {

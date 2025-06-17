@@ -22,42 +22,44 @@ const nextPages = [
 ];
 
 if (pageNum) {
+  const max = maxSelect[pageNum];
+  const nextBtn = Array.from(document.querySelectorAll('.nav-button')).find(btn => btn.textContent.includes('다음으로'));
+
   // 선택지 클릭 이벤트
-  document.querySelectorAll('.img-option, .option-button').forEach((el, idx) => {
+  document.querySelectorAll('.img-option, .option-button').forEach((el) => {
     el.addEventListener('click', function () {
-      // 선택/해제
+      const selected = document.querySelectorAll('.img-option.selected, .option-button.selected');
       if (el.classList.contains('selected')) {
         el.classList.remove('selected');
       } else {
-        // 최대 선택 개수 제한
-        const selected = document.querySelectorAll('.img-option.selected, .option-button.selected');
-        if (selected.length < maxSelect[pageNum]) {
+        if (selected.length < max) {
           el.classList.add('selected');
-        } else if (maxSelect[pageNum] === 1) {
+        } else if (max === 1) {
           selected.forEach(s => s.classList.remove('selected'));
           el.classList.add('selected');
         }
       }
+      // 선택 개수에 따라 다음 버튼 활성/비활성
+      const nowSelected = document.querySelectorAll('.img-option.selected, .option-button.selected').length;
+      if (nextBtn) nextBtn.disabled = (nowSelected !== max);
     });
   });
 
-  // 다음으로 버튼 클릭 시 저장
-  document.querySelectorAll('.nav-button').forEach(btn => {
-    if (btn.textContent.includes('다음으로')) {
-      btn.addEventListener('click', function (e) {
-        const selected = Array.from(document.querySelectorAll('.img-option.selected, .option-button.selected'));
-        if (selected.length === 0) {
-          alert('선택지를 선택해 주세요.');
-          e.preventDefault();
-          return;
-        }
-        // 선택값 저장
-        answers[pageNum - 1] = selected.map(el => el.textContent.trim());
-        localStorage.setItem('lushhour_answers', JSON.stringify(answers));
-        window.location.href = nextPages[pageNum - 1];
-      });
-    }
-  });
+  // 페이지 진입 시 버튼 비활성화
+  if (nextBtn) nextBtn.disabled = true;
 
-  document.querySelector('.option-list')
+  // 다음으로 버튼 클릭 시 저장 및 이동
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function (e) {
+      const selected = Array.from(document.querySelectorAll('.img-option.selected, .option-button.selected'));
+      if (selected.length !== max) {
+        e.preventDefault();
+        return;
+      }
+      // 선택값 저장
+      answers[pageNum - 1] = selected.map(el => el.textContent.trim());
+      localStorage.setItem('lushhour_answers', JSON.stringify(answers));
+      window.location.href = nextPages[pageNum - 1];
+    });
+  }
 }
